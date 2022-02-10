@@ -4,6 +4,7 @@ public class Switch {
     public static void main(String[] args) {
 //        Task();
         c1_1_Task.makeTask1();
+        c1_2_Task.Task_2();
     }
 
 
@@ -22,6 +23,7 @@ public class Switch {
                 break;
             default:
                 System.out.println("Something else");
+                break;
         }
     }
 }
