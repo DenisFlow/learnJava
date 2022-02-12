@@ -1,13 +1,13 @@
 package c3_While;
 
 public class While {
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        Task();
 //        DoLoop();
 //        Task2();
 //        Task3();
-        c3_1_Task.voidTask();
-    }
+//        c3_1_Task.voidTask();
+//    }
     /*
     Modify the while code above
 Make it also record the total
