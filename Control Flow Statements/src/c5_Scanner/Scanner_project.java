@@ -5,10 +5,12 @@ import java.util.Scanner;
 public class Scanner_project {
     public static void main(String[] args) {
 //        getDataAndOutput();
-        readNumbers();
+//        readNumbers();
+        MinAndMaxInputChallenge();
     }
 
-    public static void getDataAndOutput(){
+
+    public static void getDataAndOutput() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Print your name");
 
@@ -55,7 +57,7 @@ Hint:
 
         while (counterNumbers <= 10) {
             System.out.println("Enter number #" + counterNumbers + ":");
-            if (scanner.hasNextInt()){
+            if (scanner.hasNextInt()) {
                 int number = scanner.nextInt();
                 sumOfNumbers += number;
                 numbersString += " " + number;
@@ -70,6 +72,37 @@ Hint:
         scanner.close();
 
         System.out.println("Sum of numbers " + numbersString + " is " + sumOfNumbers);
+    }
+    /*
+Read the numbers from the console entered by the user and print the minimum and maximum number the user has entered.
+Before the user enters the number, print the message "Enter number:"
+If the user enters an invalid number, break out of the loop and print the minimum and maximum number.
+Hint:
+•	Use an endless while loop.
+Bonus:
+•	Create a project with the name MinAndMaxInputChallenge.
+*/
+    public static void MinAndMaxInputChallenge() {
+        Scanner scanner = new Scanner(System.in);
+        int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
+        while (true){
+            System.out.println("Enter number:");
+            if(scanner.hasNextInt()){
+                int number = scanner.nextInt();
+                if (max < number)
+                    max = number;
+                if (min > number)
+                    min = number;
+
+                scanner.nextLine();
+            }else
+                break;
+        }
+        if (min == Integer.MAX_VALUE || max == Integer.MIN_VALUE)
+            System.out.println("Numbers wasn't written");
+        else
+            System.out.println("min number is " + min + " max number is " + max);
+        scanner.close();
     }
 }
 
