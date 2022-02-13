@@ -13,11 +13,11 @@ Add some System.out.printin's in the two methods above as well.
 
 */
 public class BankAccount {
-    String number;
-    int balance;
-    String customerName;
-    String email;
-    String phoneNumber;
+    private String number;
+    private int balance;
+    private String customerName;
+    private String email;
+    private String phoneNumber;
 
     public BankAccount(String number, int balance, String customerName, String email, String phoneNumber) {
         this.number = number;

@@ -17,6 +17,26 @@ public class Dog extends Animal {
 
     }
 
+    public void walk(){
+        System.out.println("Dog.walk()");
+        super.move(5);
+    }
+
+    public void run(){
+        System.out.println("Dog.run()");
+        move(15);
+    }
+
+    @Override
+    public void move(int speed) {
+        moveLegs(speed);
+        super.move(speed);
+    }
+
+    private void moveLegs(int speed){
+        System.out.println("Dog.moveLegs()");
+    }
+
     private void chew() {
         System.out.println("Dog.chew()");
     }
