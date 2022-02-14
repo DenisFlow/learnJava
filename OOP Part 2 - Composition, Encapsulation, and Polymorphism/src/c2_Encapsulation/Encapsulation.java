@@ -14,9 +14,9 @@ public class Encapsulation {
 //        EnhancedPlayer player = new EnhancedPlayer("Denis", 50, "Sword");
 //        System.out.println("Initial health is " + player.getMainHealth());
 
-        Printer printer = new Printer(50, true);
-        printer.print(4);
-        printer.print(2);
+//        Printer printer = new Printer(50, true);
+//        printer.print(4);
+//        printer.print(2);
     }
 }
 
