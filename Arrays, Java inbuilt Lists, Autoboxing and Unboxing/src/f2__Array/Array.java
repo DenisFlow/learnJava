@@ -22,10 +22,12 @@ Tip:
     }
 
     public static int[] reversed(int[] array) {
-        int[] newArray = new int[array.length];
-        for (int i = 0; i < array.length; i++) {
-            newArray[i] = array[array.length - i - 1];
+        int n = array.length;
+        int[] newArray = new int[n];
+        for (int i = 0; i < n; i++) {
+            newArray[i] = array[n - i - 1];
         }
+
 
         return newArray;
     }
